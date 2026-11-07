@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="LojaBot">
+  <rect width="512" height="512" rx="118" fill="#111827"/>
+  <rect x="85" y="86" width="342" height="340" rx="78" fill="#153343" stroke="#22D3EE" stroke-opacity=".48" stroke-width="8"/>
+  <path d="M166 289v-68m63 119V172m63 168V204m63 109v-85" fill="none" stroke="#22D3EE" stroke-linecap="round" stroke-width="28"/>
+  <circle cx="166" cy="221" r="16" fill="#A5F3FC"/><circle cx="229" cy="172" r="16" fill="#A5F3FC"/><circle cx="292" cy="204" r="16" fill="#A5F3FC"/><circle cx="355" cy="228" r="16" fill="#A5F3FC"/>
+</svg>

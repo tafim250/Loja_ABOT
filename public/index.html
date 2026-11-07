@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#111827" />
+    <meta name="description" content="Demonstração local do atendimento e fluxo de pedidos da LojaBot." />
+    <title>LojaBot — Demo de atendimento</title>
+    <link rel="icon" type="image/svg+xml" href="/lojabot-logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script defer src="/app.js"></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a class="brand" href="/" aria-label="LojaBot, painel inicial">
+          <span class="brand-mark"><span></span><span></span><span></span></span>
+          <span class="brand-copy"><strong>loja<span>bot</span></strong><small>BUSINESS AUTOMATION</small></span>
+        </a>
+        <div class="store-switcher">
+          <span class="store-avatar">LR</span>
+          <span class="store-meta"><strong>Loja Raiz</strong><small>Loja de demonstração</small></span>
+          <span class="chevron">⌄</span>
+        </div>
+        <div class="nav-caption">ESPAÇO DE TRABALHO</div>
+        <nav class="main-nav" aria-label="Navegação principal">
+          <button class="nav-link is-active" data-page="overview"><span class="nav-icon">▦</span><span>Visão geral</span></button>
+          <button class="nav-link" data-page="conversations"><span class="nav-icon">▤</span><span>Conversas</span><span class="nav-count" id="conversation-count">1</span></button>
+          <button class="nav-link" data-page="products"><span class="nav-icon">◇</span><span>Catálogo</span></button>
+          <button class="nav-link" data-page="orders"><span class="nav-icon">▣</span><span>Pedidos</span></button>
+          <button class="nav-link" data-page="customers"><span class="nav-icon">♙</span><span>Clientes</span></button>
+        </nav>
+        <div class="nav-caption nav-caption-lower">SISTEMA</div>
+        <nav class="main-nav" aria-label="Configurações">
+          <button class="nav-link" data-page="settings"><span class="nav-icon">⚙</span><span>Configurações</span></button>
+        </nav>
+        <div class="sidebar-spacer"></div>
+        <div class="sidebar-foot">
+          <div class="side-agent"><span class="agent-dot"></span><span><strong>Agente de demonstração</strong><small>Motor local · regras de teste</small></span></div>
+          <button class="profile-button" data-action="profile"><span class="profile-avatar">O</span><span><strong>Proprietário</strong><small>Ambiente de teste</small></span><span class="more-dots">···</span></button>
+        </div>
+      </aside>
+
+      <div class="work-area">
+        <header class="topbar">
+          <div class="topbar-context"><span class="topbar-kicker">LOJA RAIZ <span class="topbar-divider">/</span> <span id="crumb-label">VISÃO GERAL</span></span><strong id="topbar-title">Visão geral</strong></div>
+          <div class="topbar-actions">
+            <span class="environment-pill"><span class="pulse-dot"></span> AMBIENTE DE TESTE</span>
+            <button class="icon-button" title="Ajuda da demonstração" aria-label="Ajuda" data-action="help">?</button>
+            <button class="reset-button" data-action="reset"><span>↺</span> Reiniciar demo</button>
+          </div>
+        </header>
+
+        <main class="workspace">
+          <section class="page-view" id="page-view" aria-live="polite"></section>
+          <aside class="chat-panel" id="chat-panel" aria-label="Simulador de conversa"></aside>
+        </main>
+      </div>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
