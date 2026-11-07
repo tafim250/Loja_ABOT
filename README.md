@@ -1,26 +1,26 @@
-# LojaBot — Demo de atendimento e vendas
+# LojaBot — Business automation demo
 
-Este protótipo é uma demonstração local, em português brasileiro (PT-BR), de um fluxo simples de catálogo, atendimento e pedidos.
+This is a test-only business dashboard and conversation simulator. The interface, sample customers, customer messages, and demo-agent replies are in English.
 
-## Executar
+## Run
 
-Requer Node.js 18 ou superior. Na raiz do projeto, execute:
+Requires Node.js 18 or newer. From the project root, run:
 
 ```bash
 npm start
 ```
 
-Abra `http://localhost:3000` no navegador. No Preview gerenciado, o painel abre automaticamente quando o servidor estiver ativo.
+Open `http://localhost:3000` in a browser. In the managed Preview, the dashboard loads when the server is running.
 
-## O que testar
+## Try the demo
 
-- Use as sugestões rápidas ou escreva em português para procurar produtos de exemplo.
-- Confira preços, tamanhos, cores e estoque apresentados a partir do catálogo local.
-- Escolha uma variação, preencha dados fictícios e revise a prévia do pedido.
-- Confirme explicitamente a prévia para criar um pedido de teste; o estoque local dessa variação será reduzido.
-- Peça atendimento humano para sinalizar a conversa e use o botão do painel para retomar a automação.
-- Reinicie a demo para restaurar catálogo, conversas e pedidos ao estado inicial.
+- Use a suggested message or type a free-form customer message in English, such as “Does the Aurora Dress have size M?”
+- Review sample prices, sizes, colors, and stock from the local catalog.
+- Choose a product variation, enter fictitious customer and delivery details, and review the order preview.
+- Explicitly confirm the preview to create a test order; only that demo variant's local stock is reduced.
+- Request a person to simulate a human handoff, then use the panel control to resume the demo agent.
+- Select **Reset demo** to restore the original sample catalog, conversations, and orders.
 
-## Limites importantes
+## Important limitations
 
-Não há integração real com WhatsApp, Instagram, pagamentos, frete ou um provedor/modelo de IA. O agente usa regras locais básicas, não IA generativa. Conversas, clientes e pedidos ficam no `localStorage` do navegador atual. Use somente dados fictícios; não insira dados pessoais reais. Não publique como sistema de produção sem adicionar autenticação, backend, armazenamento seguro, integrações oficiais, proteções de privacidade e monitoramento.
+This demo does not connect to WhatsApp, Instagram, payments, shipping, or an AI model. The response engine uses basic local rules, not generative AI. Conversations, customers, and orders are stored only in this browser's `localStorage`. Use fictitious details only. Do not treat this prototype as a production system; production use requires authentication, a backend, secure data storage, official integrations, privacy controls, and monitoring.
